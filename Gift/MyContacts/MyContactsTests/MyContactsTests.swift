@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import ContactEntry
 @testable import MyContacts
 
 class MyContactsTests: XCTestCase {
@@ -31,6 +32,21 @@ class MyContactsTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+
+    func shouldInitialiseContactEntryObject() {
+        
+        let contactEntry: ContactEntry? = ContactEntry();
+
+        XCTAssert(contactEntry.isKindOfClass(ContactEntry)) // should instantiate ContactEntry
+
+    }   
+    
+    func shouldHaveFullName() {
+
+        let contactEntry: NSObject?
+
+
     }
     
 }
