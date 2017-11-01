@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MyContacts
 //
-//  Created by Kumail Tinwala on 10/31/17.
+//  Created by Koketso Gift Matlhatsi on 10/31/17.
 //  Copyright © 2017 Koketso Gift Matlhatsi. All rights reserved.
 //
 
