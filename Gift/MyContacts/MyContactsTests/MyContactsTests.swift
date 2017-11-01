@@ -38,7 +38,7 @@ class MyContactsTests: XCTestCase {
         
         let contactEntry: ContactEntry? = ContactEntry();
 
-        XCTAssert(contactEntry.isKindOfClass(ContactEntry)) // should instantiate ContactEntry
+        XCTAssert(contactEntry.isKindOfClass(ContactEntry), "should instantiate ContactEntry")
 
     }   
     

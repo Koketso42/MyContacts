@@ -33,4 +33,28 @@ class MyContactsUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testShouldFetchContactsDataWhenViewIsLoaded() {
+        // Given
+        let addressBookViewControllerSpy = AddressBookViewControllerSpy()
+        sut.output = listOrdersViewControllerOutputSpy
+    
+        // When
+        loadView()
+    
+        // Then
+        XCTAssert(addressBookViewControllerSpy.fetchContactsCalled, "Should fetch contacts when the view is loaded")
+    }
+}
+
+ class AddressBookViewControllerSpy: AddressBookViewController {
+     
+    var fetchContactsCalled = false
+
+    func fetchContacts(request: MockContactsList) {
+      fetchContactsCalled = true
+    }
+  }
+
+struct MockContactsList {
+
 }
